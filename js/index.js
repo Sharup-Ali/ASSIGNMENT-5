@@ -36,5 +36,5 @@ btnDonate.addEventListener('click', function () {
      
     `; 
  
-    document.getElementById('history-container').appendChild(historyItem); // Assuming there's a container to append the history 
+    document.getElementById('history-container').appendChild(historyItem); // container to append the history 
 });
