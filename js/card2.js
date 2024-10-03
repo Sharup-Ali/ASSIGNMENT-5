@@ -6,7 +6,7 @@ btnDonateCard2.addEventListener('click', function(){
     const donationCollected = getTextFieldValueById('donated-money-added');
     // validation for input donation 
     if (isNaN(donateInput) || donateInput <= 0) { 
-        return alert('Please enter a valid donation amount'); 
+        return alert('Please enter a valid Donation Amount'); 
     } 
      
     
@@ -22,7 +22,7 @@ btnDonateCard2.addEventListener('click', function(){
     const newBalance = mainBalance - donateInput;
     // validation for new main balance in top right 
     if (newBalance < 0) { 
-        return alert('Insufficient balance, please try again later.'); 
+        return alert('Insufficient balance, Please try again later.'); 
     } 
     document.getElementById('main-balance').innerText = newBalance;
 
