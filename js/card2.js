@@ -6,23 +6,22 @@ btnDonateCard2.addEventListener('click', function(){
     const donationCollected = getTextFieldValueById('donated-money-added');
     // validation for input donation 
     if (isNaN(donateInput) || donateInput <= 0) { 
-        return alert('Please enter a valid Donation Amount'); 
+        return alert('Please enter a valid donation amount'); 
     } 
      
     
     // Show modal 
     my_modal_2.showModal();
     // console.log(donateInput, donationCollected)
-    
 
     const newDonatedCollected = donationCollected + donateInput;
-    
+    // console.log(newDonatedCollected)
     document.getElementById('donated-money-added').innerText = newDonatedCollected;
 
     const newBalance = mainBalance - donateInput;
     // validation for new main balance in top right 
     if (newBalance < 0) { 
-        return alert('Insufficient balance, Please try again later.'); 
+        return alert('Insufficient balance, please try again later.'); 
     } 
     document.getElementById('main-balance').innerText = newBalance;
 
