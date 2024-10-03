@@ -5,7 +5,7 @@ btnDonateCard2.addEventListener('click', function(){
     const donateInput = getInputFieldValueById('input-btn-card-2');
     const donationCollected = getTextFieldValueById('donated-money-added');
     // validation for input donation 
-    if ( donateInput <= 0) { 
+    if (isNaN(donateInput) || donateInput <= 0) { 
         return alert('Please enter a valid donation amount'); 
     } 
      
